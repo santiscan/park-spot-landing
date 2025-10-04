@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { MapPin, Search } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { MapPin, Search } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -15,20 +15,26 @@ export function HeroSection() {
           </div>
 
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance">
-            Estaciona fácil, gana dinero con tu entrada
+            No pierdas tiempo buscando estacionamiento!
           </h1>
 
           <p className="mb-10 text-lg text-muted-foreground sm:text-xl text-pretty leading-relaxed">
-            Conectamos conductores que buscan estacionamiento con propietarios que tienen espacios disponibles. Rápido,
-            seguro y conveniente.
+            Genera ingresos con tu espacio de estacionamiento!
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto text-base font-semibold">
+            <Button
+              size="lg"
+              className="w-full sm:w-auto text-base font-semibold"
+            >
               <Search className="mr-2 h-5 w-5" />
               Buscar estacionamiento
             </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto text-base font-semibold bg-transparent">
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto text-base font-semibold bg-transparent"
+            >
               <MapPin className="mr-2 h-5 w-5" />
               Ofrecer mi espacio
             </Button>
@@ -51,5 +57,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
